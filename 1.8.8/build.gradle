@@ -17,7 +17,7 @@ repositories {
         url "https://mvnrepository.com/artifact"
     }
     maven{
-        url "http://nifty-gui.sourceforge.net/nifty-maven-repo/"
+        url "https://nifty-gui.sourceforge.net/nifty-maven-repo/"
     }
 }
 
