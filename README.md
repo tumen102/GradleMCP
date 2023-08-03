@@ -36,6 +36,7 @@ Step 6: You will be prompted with the question "Would you like to install optifi
 # Now GradleMCP is completed #
 
 Step 7: Open up IntelliJ IDEA and open the project folder.
+
 Step 8: If asked if you trust the folder select Trust.
 
 # Now we configure intelliJ #
