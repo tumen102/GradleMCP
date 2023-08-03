@@ -13,9 +13,7 @@ Supported versions:
 
 # How to setup #
 
-# Video tutorial: Coming soon #
-
-# This may seem like a lot but trust me it isn't it takes like a minute to setup (Besides decompile time and such) #
+This may seem like a lot but trust me it isn't it takes like a minute to setup (Besides decompile time and such)
 
 Step 1: Make a new folder on your desktop call it anything you want, preferably your client name.
 
@@ -39,39 +37,12 @@ Step 6: You will be prompted with the question "Would you like to install optifi
 
 # Now GradleMCP is completed #
 
-Step 7: Open up IntelliJ IDEA and create new project.
-
-Step 8: For the project type select "Gradle" and click next.
-
-Step 9: Enter in a group id (ex: me.hippo), a Artifact id (ex: Client), and a version (ex: 0.6.9) and click next.
-
-Step 10: Click "Use auto-import" and click next
-
-Step 11: Give the project a name, preferably your artifact id, set the project location to your client folder that you made.
+Step 7: Open up IntelliJ IDEA and open the project folder.
+Step 8: If asked if you trust the folder select Trust.
 
 # Now we configure intelliJ #
 
 Go to build.gradle:
-
-# We need to change this because IntelliJ adds things to the build.gradle #
-
-At the top you will see:
-"plugins {
-    id 'java'
-}"
-This is repeated twice, just remove one of them.
-
-Now remove everything below:
-"jar {
-    from{
-        configurations.addLib.collect {
-            if(!it.isDirectory()){
-                zipTree(it)
-            }
-        }
-    }
-}"
-# DO NOT REMOVE THE JAR FUNCTION #
 
 Now we need to add a run configuration:
 Expand "src" -> "main" -> "java" and click on "Start.java"
@@ -81,7 +52,9 @@ You will get an error this is how to fix:
 
 Click on the drop down box right by the green hammer (top right corner) and click on "Edit Configurations".
 
-You will "VM options: " and then a text box, in that textbox put "-Djava.library.path=versions/1.8.8/1.8.8-natives/" This is linking the native libraries.
+Press "Modify Options" and tick "Add VM Options"
+
+Then in "VM options: ", put "-Djava.library.path=versions/1.8.8/1.8.8-natives/". This is linking the native libraries.
 
 Then you will see "Working directory: " then a textbox with a file path in it, just add a /.minecraft at the end of it.
 "/home/hippo/Desktop/GradleMCP" will become "/home/hippo/Desktop/GradleMCP/.minecraft"
