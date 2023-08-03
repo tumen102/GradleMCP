@@ -1,5 +1,5 @@
 # GradleMCP
-A simple to setup workspace to use mcp with Gradle.
+A simple to setup workspace to use mcp with Gradle. Originally made by Hippo
 
 Linux: Yes, tested.
 
