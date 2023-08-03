@@ -1,5 +1,5 @@
 # GradleMCP
-A simple to setup workspace to use mcp with Gradle. Originally made by Hippo
+A simple to setup workspace to use mcp with Gradle. Originally made by Hippo, i've just edited the tutorial and the build.gradles to ensure they use https as insecure repositores are no longer supported.
 
 Linux: Yes, tested.
 
@@ -12,8 +12,6 @@ Supported versions:
 1.8.8
 
 # How to setup #
-
-This may seem like a lot but trust me it isn't it takes like a minute to setup (Besides decompile time and such)
 
 Step 1: Make a new folder on your desktop call it anything you want, preferably your client name.
 
